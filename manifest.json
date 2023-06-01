@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "My First Google Extension",
+    "version": "1.0",
+    "description": "开始学习谷歌的插件开发",
+    "icons": {
+        "48": "icon/icon48.png"
+    },
+    "browser_action": {
+        "default_title": "更改滤镜+监测页面+博客导航",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icon/icon16.png",
+            "48": "icon/icon48.png",
+            "128": "icon/icon128.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background":{
+        "scripts":["background.js"],
+        "persistent": false
+    }
+}
